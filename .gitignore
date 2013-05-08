@@ -1,0 +1,65 @@
+### /Users/rh0249/.gitignore-boilerplates/Global/OSX.gitignore
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+### /Users/rh0249/.gitignore-boilerplates/rails.gitignore
+
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+.rvmrc
+/.bundle
+/vendor/bundle
+/log/*
+/tmp/*
+/db/*.sqlite3
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
+.project
+
+
+### /Users/rh0249/.gitignore-boilerplates/ruby.gitignore
+
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+
+# YARD artifacts
+.yardoc
+_yardoc
+doc/
+
+
+### /Users/rh0249/.gitignore-boilerplates/Global/RubyMine.gitignore
+
+.idea/workspace.xml
+
+

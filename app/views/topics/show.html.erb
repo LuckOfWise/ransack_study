@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @topic.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @topic.content %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @topic.user.name %><!--この行を修正-->
+</p>
+
+
+<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<%= link_to 'Back', topics_path %>
