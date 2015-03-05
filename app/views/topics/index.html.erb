@@ -11,7 +11,14 @@
   <%= f.text_field :user_name_cont %>
   <br />
   <%= f.label :user, 'ユーザー' %>
-  <%= f.select :user_id_eq, User.all.map { |u| [u.name, u.id] }, include_blank: 'すべて' %>
+  <% User.all.each do |user| %>
+    <% if user.id.to_s.in?(params[:q][:user_id_eq_any]) %>
+      <%= check_box_tag 'q[user_id_eq_any][]', user.id, checked: true %>
+    <% else %>
+      <%= check_box_tag 'q[user_id_eq_any][]', user.id %>
+    <% end %>
+    <label><%= user.name %></label>
+  <% end %>
   <div>
     <%= f.submit '検索する' %>
   </div>
